@@ -86,8 +86,8 @@
 				E6F153FF23195B2D00AE5316 /* FirstViewController.swift */,
 				E6F1540123195B2D00AE5316 /* SecondViewController.swift */,
 				E6F1540323195B2D00AE5316 /* Main.storyboard */,
-				E6F1540623195B2E00AE5316 /* Assets.xcassets */,
 				E6F1540823195B2E00AE5316 /* LaunchScreen.storyboard */,
+				E6F1540623195B2E00AE5316 /* Assets.xcassets */,
 				E6F1540B23195B2E00AE5316 /* Info.plist */,
 			);
 			path = DataStoreTrial;

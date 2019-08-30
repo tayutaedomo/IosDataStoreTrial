@@ -47,15 +47,20 @@ class MemoryManager {
         // - guard statement: if we had a failure then continue
         guard didFail else { return }
 
+        // Return if already initialized
+        if MemoryManager.tasks.count > 0 { return }
+
         // - we had a failure in finding a pre-existing array, create a new array of TaskItems!
         MemoryManager.tasks = [
             TaskItem(isToggledOn: false, title: "task 1", notes: "this is task 1"),
             TaskItem(isToggledOn: false, title: "task 2", notes: "this is task 2"),
-            TaskItem(isToggledOn: true, title: "task 3", notes: "this is task 3"),
+            TaskItem(isToggledOn: true,  title: "task 3", notes: "this is task 3"),
             TaskItem(isToggledOn: false, title: "task 4", notes: "this is task 4"),
             TaskItem(isToggledOn: false, title: "task 5", notes: "this is task 5"),
-            TaskItem(isToggledOn: true, title: "task 6", notes: "this is task 6")
+            TaskItem(isToggledOn: true,  title: "task 6", notes: "this is task 6")
         ]
+
+        print("MemoryManager: Set default values to tasks.")
     }
 
     // - encode our array into memory
