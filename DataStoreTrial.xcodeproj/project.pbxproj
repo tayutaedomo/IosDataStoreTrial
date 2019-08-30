@@ -14,6 +14,7 @@
 		E6F1540723195B2E00AE5316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6F1540623195B2E00AE5316 /* Assets.xcassets */; };
 		E6F1540A23195B2E00AE5316 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6F1540823195B2E00AE5316 /* LaunchScreen.storyboard */; };
 		E6F1541523195B2E00AE5316 /* DataStoreTrialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F1541423195B2E00AE5316 /* DataStoreTrialTests.swift */; };
+		E6F1542423195F1800AE5316 /* MemoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F1542323195F1800AE5316 /* MemoryManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		E6F1541023195B2E00AE5316 /* DataStoreTrialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataStoreTrialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F1541423195B2E00AE5316 /* DataStoreTrialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreTrialTests.swift; sourceTree = "<group>"; };
 		E6F1541623195B2E00AE5316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6F1542323195F1800AE5316 /* MemoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MemoryManager.swift; path = Models/MemoryManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +81,13 @@
 		E6F153FC23195B2D00AE5316 /* DataStoreTrial */ = {
 			isa = PBXGroup;
 			children = (
+				E6F1542223195E3300AE5316 /* Models */,
 				E6F153FD23195B2D00AE5316 /* AppDelegate.swift */,
 				E6F153FF23195B2D00AE5316 /* FirstViewController.swift */,
 				E6F1540123195B2D00AE5316 /* SecondViewController.swift */,
 				E6F1540323195B2D00AE5316 /* Main.storyboard */,
-				E6F1540623195B2E00AE5316 /* Assets.xcassets */,
 				E6F1540823195B2E00AE5316 /* LaunchScreen.storyboard */,
+				E6F1540623195B2E00AE5316 /* Assets.xcassets */,
 				E6F1540B23195B2E00AE5316 /* Info.plist */,
 			);
 			path = DataStoreTrial;
@@ -97,6 +100,14 @@
 				E6F1541623195B2E00AE5316 /* Info.plist */,
 			);
 			path = DataStoreTrialTests;
+			sourceTree = "<group>";
+		};
+		E6F1542223195E3300AE5316 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E6F1542323195F1800AE5316 /* MemoryManager.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +213,7 @@
 			files = (
 				E6F1540223195B2D00AE5316 /* SecondViewController.swift in Sources */,
 				E6F153FE23195B2D00AE5316 /* AppDelegate.swift in Sources */,
+				E6F1542423195F1800AE5316 /* MemoryManager.swift in Sources */,
 				E6F1540023195B2D00AE5316 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
